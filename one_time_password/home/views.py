@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.conf import settings 
 from django.core.mail import send_mail
 import random
-def index(request):
-    return render(request,'index.html')
+def home(request):
+    return render(request,'home.html')
 def email(request):
     global m
     email=request.POST['email']
